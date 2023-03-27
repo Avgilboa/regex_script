@@ -1,0 +1,8 @@
+
+
+                    [____class text_____]
+                    |    _list[str]_    |
+                    |    _check_regex_  |
+                    |    _ str _        |
+                    |    _ repr_        |
+                    
