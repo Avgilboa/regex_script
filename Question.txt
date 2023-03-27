@@ -1,0 +1,4 @@
+1. when i get a regex in The teminal it is it can be string type or i get none type?
+python3 regex.py -f "--regex--" || python3 regex.py -f --regex--
+
+2.Will The script run after run the file or i start the file with the parameters?
