@@ -60,6 +60,9 @@ class find_the_regex(Definitions):
     
 
     def printer(self, line: int, exp:str, place: object, file_name: str): 
+        if self.machine is True:
+            print("[{}:{}:{}:{}]".format(file_name, line, place[0].start(), place[0].group()))
+        header ="[{}::{}]".format(file_name, line)
         if self.color is True:
             color_name =[]
             start = 0
@@ -79,12 +82,11 @@ class find_the_regex(Definitions):
             for match in place:
                 exp2 += " " * (match.start() - len(exp2))
                 exp2 += "^" * (match.end() - match.start())
-            exp = exp.strip() + "\n" + exp2
-            #print(exp)
-        if self.machine is True:
-            print("[{}:{}:{}]".format(file_name, line,exp.strip()))
-        print(exp)
-        
+            exp = exp.strip() + "\n"  + " "*(len(header)) + exp2
+        print(header + exp)
+
+
+
 
 
 def split_from_terminal():
