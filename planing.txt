@@ -1,8 +1,5 @@
 
 
-                    [____class text_____]
-                    |    _list[str]_    |
-                    |    _check_regex_  |
-                    |    _ str _        |
-                    |    _ repr_        |
-                    
+ Class My_text -> contain the text from the input on list save all line as a saparate object.
+ Class reference -> save the printing setting and the relevante flags of the text
+ class Find_the_Regex -> procces the regex: str and the my_text. find is the relevant line and print them. 

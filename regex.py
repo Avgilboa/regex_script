@@ -6,9 +6,10 @@ import sys
     output: <file_name> <no_page>: <line>
 """
 class my_text:
+
+
     def __init__(self, file_name) -> None:
-        self.txt_lst = self.file_to_lst(file_name)
-        self.my_name = file_name
+        self.txt_lst, self.my_name = self.file_to_lst(file_name), file_name
 
 
     def file_to_lst(self, file_name):
@@ -32,32 +33,68 @@ class my_text:
         return st
 
 
-    def find_regex(self, regex: str):
-        pattern = re.compile(regex)
-        for line,exp in enumerate(self.txt_lst):
-            match = pattern.finditer(exp)
-            place = [i for i in match]
-            if '-u' in sys.argv:
-                
-            if len(place) > 0:
-                print(f"{self.get_name()} {line+1}: {exp.strip()}")
+class Definitions:
+    def __init__(self, under_score: bool, color: bool, machine: bool ) -> None:
+        self.under_score, self.color, self.machine = under_score, color, machine
 
-def regex_to_str(regex) -> str:
-    if regex is None:
-        raise Exception("Usage -r <regex> (optional) -f <regex>")
-        # not gonna happend because regex is required to be
-    return r""+str(regex)
+class find_the_regex(Definitions):
+    def __init__(self, regex, under_score: bool, color: bool, machine: bool) -> None:
+        super().__init__(under_score, color, machine)
+        self.regex = self.regex_to_str(regex)
+    
+
+    def regex_to_str(self, regex) -> str:
+        if regex is None:
+            raise Exception("Usage -r <regex> (optional) -f <regex>")
+            # not gonna happend because regex is required to be
+        return r""+str(regex)
+    
+    
+    def find_regex(self, text: my_text):
+        pattern = re.compile(self.regex)
+        for line,exp in enumerate(text.txt_lst):
+            match = pattern.finditer(exp.strip())
+            place = [i for i in match]
+            if len(place) > 0:
+                #print("{} -> {}".format(place[0].start(), place[0].end()))
+                self.printer(line+1, exp, place, text.get_name())
+    
+
+    def printer(self, line: int, exp:str, place: object, file_name: str):
+        
+        if self.color is True:
+            pass
+        if self.under_score is True:
+            exp2 =""
+            for match in place:
+                exp2 += " " * (match.start() - len(exp2))
+                exp2 += "^" * (match.end() - match.start())
+            exp = exp.strip() + "\n" + exp2
+            print(exp)
+        if self.machine is True:
+            print("[{}:{}:{}]".format(file_name, line,exp.strip()))
+        
+
+    
+
+
 
 
 def split_from_terminal():
     parser = argparse.ArgumentParser()
     parser.add_argument("-r", "--regex",required=True ,help= "our regex")
     parser.add_argument("-f", "--file",nargs='+' ,help="The file name")
+    parser.add_argument("-u","--under_score" ,action='store_true',
+                         help="add '^ under the found regex text")
+    parser.add_argument("-c","--color" ,action='store_true',
+                        help="color the found regex text")
+    parser.add_argument("-m","--machine" ,action='store_true',
+                        help="generate macine readable output")
     args = parser.parse_args()
-    regex = regex_to_str(args.regex)
-    print(type(args.file))
+    regex = find_the_regex(args.regex, args.under_score, 
+                           args.color, args.machine)
     for txt in args.file:
-        my_text(txt).find_regex(regex)
+        regex.find_regex(my_text(txt))
     
 
 split_from_terminal()

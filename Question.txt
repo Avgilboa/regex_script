@@ -1,13 +1,15 @@
 1. when i get a regex in The teminal it is it can be string type or i get none type?
 python3 regex.py -f "--regex--" || python3 regex.py -f --regex--
 
-2.Will The script run after run the file or i start the file with the parameters?
+2.Will The script run after run the file or i start the file with the parameters? with
 
 2.1. What to do with sytax error ( ) , " " and space in the terminal that can accepted?
 
-3. -f represent on file or some files?
+3. -f represent on file or some files? 
+3A. files!
 
 4. how to represent the string with and without -m?
+4A. The '-m' represent macine type that lss readable
 
 5.When i get the flags -u and the other.
 
