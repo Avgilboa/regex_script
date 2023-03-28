@@ -1,6 +1,6 @@
 import re
 import argparse
-import sys
+
 """ 
     Input: python3 regex.py -r <regex> -f(Optional) <files>
     output: <file_name> <no_page>: <line>
@@ -56,28 +56,35 @@ class find_the_regex(Definitions):
             match = pattern.finditer(exp.strip())
             place = [i for i in match]
             if len(place) > 0:
-                #print("{} -> {}".format(place[0].start(), place[0].end()))
-                self.printer(line+1, exp, place, text.get_name())
+                self.printer(line+1, exp.strip(), place, text.get_name())
     
 
-    def printer(self, line: int, exp:str, place: object, file_name: str):
-        
+    def printer(self, line: int, exp:str, place: object, file_name: str): 
         if self.color is True:
-            pass
+            color_name =[]
+            start = 0
+            for match in place:
+                color_expr = ((start, match.start()) ,
+                              "\033[93m" + exp[match.start():match.end()] + "\033[0m" )
+                color_name.append(color_expr)
+                start = match.end()
+            exp2 =""
+            for (start_pos,end_pos) , st in color_name:
+                exp2 += exp[start_pos: end_pos] + st
+            exp2 = exp2 + exp[start:]
+            exp = exp2
+            
         if self.under_score is True:
             exp2 =""
             for match in place:
                 exp2 += " " * (match.start() - len(exp2))
                 exp2 += "^" * (match.end() - match.start())
             exp = exp.strip() + "\n" + exp2
-            print(exp)
+            #print(exp)
         if self.machine is True:
             print("[{}:{}:{}]".format(file_name, line,exp.strip()))
+        print(exp)
         
-
-    
-
-
 
 
 def split_from_terminal():
@@ -98,3 +105,4 @@ def split_from_terminal():
     
 
 split_from_terminal()
+#print("\033[35m" + "This text will be blue." + "\033[0m" + "and this in the defualt color")

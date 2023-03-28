@@ -1,0 +1,3 @@
+Add the page and name file to the string
+Add the print without flags.
+try to comibined flags together

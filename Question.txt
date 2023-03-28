@@ -1,3 +1,8 @@
+
+
+0. is there is option to use more than one flag together? , now it print me when i get to the exp 
+The color wotk with everything but the underscore not.
+
 1. when i get a regex in The teminal it is it can be string type or i get none type?
 python3 regex.py -f "--regex--" || python3 regex.py -f --regex--
 

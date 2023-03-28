@@ -1,0 +1,18 @@
+for insert a color to the terminal using python we have text we need to insert:
+
+Here is the header and the ender we add to each color:
+
+- Blue : print("\033[34m" + "This text will be blue." + "\033[0m" + "and this in the defualt color")
+
+ANSI table : https://en.wikipedia.org/wiki/ANSI_escape_code#Colors
+
+Color	Code
+Black	\033[30m
+Red	    \033[31m
+Green	\033[32m
+Yellow	\033[33m
+Blue	\033[34m
+Magenta	\033[35m
+Cyan	\033[36m
+White	\033[37m
+reset the color  \033[0m
