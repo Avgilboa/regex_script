@@ -4,3 +4,4 @@
 
 3. Think how to insert free text from the terminal to list for working with the same page technice
 
+4. Escape code = with \ Or with [] inside quate

@@ -1,3 +1,5 @@
+Get a STDIN string and do on it the calculate
+
 Add the page and name file to the string
 Add the print without flags.
 try to comibined flags together

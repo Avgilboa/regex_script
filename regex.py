@@ -1,5 +1,6 @@
 import re
 import argparse
+import sys
 
 """ 
     Input: python3 regex.py -r <regex> -f(Optional) <files>
@@ -62,6 +63,7 @@ class find_the_regex(Definitions):
     def printer(self, line: int, exp:str, place: object, file_name: str): 
         if self.machine is True:
             print("[{}:{}:{}:{}]".format(file_name, line, place[0].start(), place[0].group()))
+            return
         header ="[{}::{}]".format(file_name, line)
         if self.color is True:
             color_name =[]
@@ -102,9 +104,12 @@ def split_from_terminal():
     args = parser.parse_args()
     regex = find_the_regex(args.regex, args.under_score, 
                            args.color, args.machine)
-    for txt in args.file:
-        regex.find_regex(my_text(txt))
+    if args.file is None:
+        temp = ''.join(sys.stdin.readlines()).strip()
+        print(temp + " This is work")
+    else:
+        for txt in args.file:
+            regex.find_regex(my_text(txt))
     
 
 split_from_terminal()
-#print("\033[35m" + "This text will be blue." + "\033[0m" + "and this in the defualt color")
