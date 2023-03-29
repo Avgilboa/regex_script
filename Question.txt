@@ -18,6 +18,7 @@ python3 regex.py -f "--regex--" || python3 regex.py -f --regex--
 4A. The '-m' represent macine type that less readable : 
 -m format: file_name:no_line:start_pos:matched_text_only
 other formats : filename::no_line The line we find the text in.
+There is an option to print the machine mode format or the regular format 
 
 5.When i get the flags -u and the other.
 in the output- the flags : '-u' and '-c' work together but '-m' work only with himself (machine type).
