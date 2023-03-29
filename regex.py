@@ -9,18 +9,8 @@ import sys
 class my_text:
 
 
-    def __init__(self, file_name) -> None:
-        self.txt_lst, self.my_name = self.file_to_lst(file_name), file_name
-
-
-    def file_to_lst(self, file_name):
-        if file_name is None:
-            raise Exception("need a file name")
-        try:
-            with open(str(file_name)) as file:
-                return file.readlines()
-        except:
-            raise Exception("no such file {}".format(str(file_name)))
+    def __init__(self, file_name , txt_lst) -> None:
+        self.txt_lst, self.my_name = txt_lst , file_name
 
 
     def get_name(self):
@@ -105,11 +95,21 @@ def split_from_terminal():
     regex = find_the_regex(args.regex, args.under_score, 
                            args.color, args.machine)
     if args.file is None:
-        temp = ''.join(sys.stdin.readlines()).strip()
-        print(temp + " This is work")
+        regex.find_regex(my_text("input".strip(),
+                                 [st.strip() for st in sys.stdin.readlines()]))
     else:
         for txt in args.file:
-            regex.find_regex(my_text(txt))
+            regex.find_regex(my_text(txt, file_to_lst(txt)))
     
+
+def file_to_lst(file_name):
+    if file_name is None:
+        raise Exception("need a file name")
+    try:
+        with open(str(file_name)) as file:
+            return file.readlines()
+    except:
+        raise Exception("no such file {}".format(str(file_name)))
+
 
 split_from_terminal()

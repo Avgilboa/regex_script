@@ -1,0 +1,11 @@
+#!/usr/bin/bash
+
+echo "hello , world
+my name is you!
+Hey
+why do you like that?" | python3 regex.py -r h -c
+
+python3 regex.py -r \[\(\].*\[\)\] -c < files/song2.txt
+
+python3 regex.py -r "[(].*[)]" -c < files/song2.txt
+python3 regex.py -r "[o][a-z]{1}" -c -u < files/file1.txt
