@@ -51,8 +51,8 @@ Just the way you are
 Yeah
 
 
-(dolev is gever!)
-( dolev is gever )
+(Yeah!)
+( Yeah )
 
-\(dolev is gevera\)
-\(dolev is gever\!\)
+\(Yeah\)
+\(Yeah\!\)
