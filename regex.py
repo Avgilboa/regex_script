@@ -81,7 +81,7 @@ class file_handler(handler):
                                     [st.strip() for st in sys.stdin.readlines()]), flags)
         else:
             for file in files:
-                self.next_handler.handle(regex, my_text(file, self.file_to_lst(file)) , flags)
+                self.next_handler.handle(regex, my_text(file, self.file_to_lst(file)) , flags) for file in files
 
     def file_to_lst(self, file_name):
         if file_name is None:
@@ -119,7 +119,7 @@ class match_handler(handler):
 
 there is three flags: 
 -m (machine mode) -->  format: file_name:no_line:start_pos:matched_text. 
--c (color mode)   -->  highlight the matching text (i choose to paing it with yellow).
+-c (color mode)   -->  highlight the matching text (i choose to paintng it with yellow).
 -u (underscore)   -->  which prints '^' under the.
 
 using dictionary to know which flags we get in the terminal
@@ -134,7 +134,6 @@ class printer_handler:
     def handle(line: int, exp:str, place: object, file_name: str, flags):
         if flags["machine"] is True:
             print("[{}:{}:{}:{}]".format(file_name, line, place[0].start(), place[0].group()))
-            # machine mode don't color the text and not underscore it.
             return
         
         #define header for print the file_name (with the path) and the number line before the text.
@@ -157,6 +156,8 @@ class printer_handler:
                 exp2 += exp[start_pos: end_pos] + st
             exp2 = exp2 + exp[start:]
             exp = exp2
+            print(header + exp)
+            return
             
 
         if flags["under_score"] is True:
@@ -166,9 +167,13 @@ class printer_handler:
                 exp2 += " " * (match.start() - len(exp2))
                 exp2 += "^" * (match.end() - match.start())
             exp = exp.strip() + "\n"  + " "*(len(header)) + exp2
-
+            print(header + exp)
+            return
+        
 
         print(header + exp)
+
+        
 
 """
 (0) This is the init class of the project
@@ -181,6 +186,8 @@ and send to the first handler the input.
 class init():
     def __init__(self) -> None:
         files , regex , flags = self.split_from_terminal()
+        if [value for value in flags.values()].count(True) > 1:
+            raise Exception("you can use only one of this flags: -u -c -m")
         self.handler = regex_handler()
         self.handler.set_next(file_handler()).set_next(match_handler()).set_next(printer_handler)
         self.handler.handle(regex, files, flags)
