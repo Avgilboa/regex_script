@@ -1,3 +1,6 @@
+b. in the -m -> write only the file name and not all the path.
+
+
 1. Pay attention that i can get number of files and not only one!
 
 2. Need to make the option if there is no file to accept string.

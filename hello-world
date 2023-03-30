@@ -7,5 +7,9 @@ why do you like that?" | python3 regex.py -r h -c
 
 python3 regex.py -r \[\(\].*\[\)\] -c < files/song2.txt
 
+python3 regex.py -r \[\(\].*\[\)\] -c -f files/song2.txt
+
 python3 regex.py -r "[(].*[)]" -c < files/song2.txt
-python3 regex.py -r "[o][a-z]{1}" -c -u < files/file1.txt
+python3 regex.py -r "[a-z]{1}[o][a-z]{1}" -c -u < files/file1.txt
+
+python3 regex.py --regex ".*[@].*[.][a-z]{3}" --files files/email.csv -c
