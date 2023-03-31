@@ -55,7 +55,7 @@ You can see more input and output examples in the tests file
 
 ## My implementation technique
 
-I implemented the script using the chain of responsibility design pattern, breaking down the problem into smaller tasks that are handled by individual components.  
+I implemented the script using the [chain of responsibility design pattern](https://refactoring.guru/design-patterns/chain-of-responsibility), breaking down the problem into smaller tasks that are handled by individual components.  
 1. First, I get the user input from the CLI and validate it to ensure that it is in the correct format. If the input is not in the correct format, an error is raised. If the input is in the correct format, it is passed to the regex handler. 
 2. Second, I split the input and pass the regex expression to the regex handler.for definenig the regex, and move on to the next handler, the file handler.
 3. The third handler reads in the specified files or reads from the standard input if no file names are provided. This handler open each file and passes it to the next handler, the match handler.
