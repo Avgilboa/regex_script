@@ -3,16 +3,16 @@
 echo "hello , world
 my name is you!
 Hey
-why do you like that?" | python3 regex.py -r h -c
+why do you like that?" | python3 regex_finder.py -r h -c
 
 
-echo | python3 regex.py -r h -c -u
-echo "" | python3 regex.py -r h -c
-python3 regex.py -r \[\(\].*\[\)\] -c < files/song2.txt
+echo | python3 regex_finder.py -r h -c -u
+echo "" | python3 regex_finder.py -r h -c
+python3 regex_finder.py -r \[\(\].*\[\)\] -c < files/song2.txt
 
-python3 regex.py -r \[\(\].*\[\)\] -c -f files/song2.txt
+python3 regex_finder.py -r \[\(\].*\[\)\] -c -f files/song2.txt
 
-python3 regex.py -r "[(].*[)]" -c < files/song2.txt
-python3 regex.py -r "[a-z]{1}[o][a-z]{1}" -u < files/file1.txt
+python3 regex_finder.py -r "[(].*[)]" -c < files/song2.txt
+python3 regex_finder.py -r "[a-z]{1}[o][a-z]{1}" -u < files/file1.txt
 
-python3 regex.py --regex ".*[@].*[.][a-z]{3}" -u --files files/email.csv 
+python3 regex_finder.py --regex ".*[@].*[.][a-z]{3}" -u --files files/email.csv 
