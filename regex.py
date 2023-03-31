@@ -81,7 +81,7 @@ class file_handler(handler):
                                     [st.strip() for st in sys.stdin.readlines()]), flags)
         else:
             for file in files:
-                self.next_handler.handle(regex, my_text(file, self.file_to_lst(file)) , flags) for file in files
+                self.next_handler.handle(regex, my_text(file, self.file_to_lst(file)) , flags)
 
     def file_to_lst(self, file_name):
         if file_name is None:
