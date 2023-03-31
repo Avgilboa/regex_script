@@ -33,6 +33,31 @@ The script should accept only one of the following mutually exclusive flags as a
 "file_name:no_line:start_pos:matched_text".
 
 
+## Run Locally
+
+Clone the project
+
+```bash
+  git clone https://github.com/Avgilboa/regex_script.git
+```
+
+Go to the project directory
+
+```bash
+cd regex_script
+```
+
+and run the script
+
+```bash
+python3 regex_finder.py --regex "[p][r]" -f files/file1.txt files/song2.txt
+```
+
+or run this bash
+```bash
+./my_test_script
+```
+
 ## Usage/Examples
 
 ```shell
