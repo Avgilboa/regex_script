@@ -72,8 +72,8 @@ out.py:
 ```
 ```shell
 output:
-    print("Hello-world!")
-    print(i)
+  [files/out.py::1]print("Hello-world!")
+  [files/out.py::3]print(i)
 ```
 
 You can see more input and output examples in the tests file
