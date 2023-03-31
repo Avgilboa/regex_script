@@ -1,6 +1,6 @@
 # Regular expression finder script
 
-I Asked to implement a Python script that searches for matching regular expressions. The script should accept a regular expression and either a text or a file as input. The script should then search for lines that match the regular expression and print them to the console.
+I asked to implement a Python script that searches for matching regular expressions. The script should accept a regular expression and either a text or a file as input. The script should then search for lines that match the regular expression and print them to the console.
 
 ## Regular expression Explain:
 
@@ -53,7 +53,7 @@ output:
 
 You can see more input and output examples in the tests file
 
-## My implemantetion tecniqe
+## My implementation technique
 
 I implemented the script using the chain of responsibility design pattern, breaking down the problem into smaller tasks that are handled by individual components.  
 1. First, I get the user input from the CLI and validate it to ensure that it is in the correct format. If the input is not in the correct format, an error is raised. If the input is in the correct format, it is passed to the regex handler. 
