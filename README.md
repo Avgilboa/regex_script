@@ -36,7 +36,7 @@ The script should accept only one of the following mutually exclusive flags as a
 ## Usage/Examples
 
 ```shell
-python3 -regex_finder.py --regex "[p][r]" -f out.py
+python3 regex_finder.py --regex "[p][r]" -f out.py
 ```
 
 ```python3
@@ -58,7 +58,7 @@ You can see more input and output examples in the tests file
 I implemented the script using the chain of responsibility design pattern, breaking down the problem into smaller tasks that are handled by individual components.  
 1. First, I get the user input from the CLI and validate it to ensure that it is in the correct format. If the input is not in the correct format, an error is raised. If the input is in the correct format, it is passed to the regex handler. 
 2. Second, I split the input and pass the regex expression to the regex handler.for definenig the regex, and move on to the next handler, the file handler.
-3. The theard handler reads in the specified files or reads from the standard input if no file names are provided. This handler open each dile and passes it to the next handler, the match handler.
+3. The third handler reads in the specified files or reads from the standard input if no file names are provided. This handler open each dile and passes it to the next handler, the match handler.
 4. The match handler loop at each line on the file and checks if there is a match with the regex expression. If a match is found, the line is passed to the printer handler.
 5. The printer handler looks for the appropriate flag and prints the line accordingly.  
 This process continues until all lines have been processed.
