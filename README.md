@@ -79,11 +79,30 @@ output:
 You can see more input and output examples in the tests file
 
 ## My implementation technique
-
 I implemented the script using the [chain of responsibility design pattern](https://refactoring.guru/design-patterns/chain-of-responsibility), breaking down the problem into smaller tasks that are handled by individual components.  
 1. First, I get the user input from the CLI and validate it to ensure that it is in the correct format. If the input is not in the correct format, an error is raised. If the input is in the correct format, it is passed to the regex handler. 
 2. Second, I split the input and pass the regex expression to the regex handler.for definenig the regex, and move on to the next handler, the file handler.
 3. The third handler reads in the specified files or reads from the standard input if no file names are provided. This handler open each file and passes it to the next handler, the match handler.
 4. The match handler loop at each line on the file and checks if there is a match with the regex expression. If a match is found, the line is passed to the printer handler.
 5. The printer handler looks for the appropriate flag and prints the line accordingly.  
-This process continues until all lines have been processed.
+This process continues until all lines have been processed.  
+
+![image](https://github.com/Avgilboa/regex_script/blob/master/res/chain%20of%20responsibility.png?raw=true)
+
+
+## Tests
+
+I use pytest validate the correctness of the script.  
+My tests are on tests.py file. I saved the correct output in the ‘res’ folder.
+
+### how to use the tests?
+
+first install the pytest package:
+
+```bash
+  pip install pytest
+```
+next - run the command
+```bash
+  pytest tests.py
+```
