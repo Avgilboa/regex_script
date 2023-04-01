@@ -73,7 +73,7 @@ cd regex_script
 and run the script
 
 ```bash
-python3 regex_finder.py --regex "[p][r]" -f files/file1.txt files/song2.txt
+python3 regex_finder.py --regex "[a-z][o][a-z]" -f files/song1.txt files/song2.txt -c
 ```
 
 or run this bash
