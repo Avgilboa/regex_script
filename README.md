@@ -35,8 +35,9 @@ The script should accept only one of the following mutually exclusive flags as a
 
 ## Run Locally
 
-Clone the project
+I built this script on ubuntu 20.04 version using python version 3.8.10
 
+Clone the project
 ```bash
   git clone https://github.com/Avgilboa/regex_script.git
 ```
