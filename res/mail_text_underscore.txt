@@ -1,0 +1,8 @@
+[files/email.csv::2]laura@example.com;2070;Laura;Grey
+                    ^^^^^^^^^^^^^^^^^
+[files/email.csv::3]craig@example.com;4081;Craig;Johnson
+                    ^^^^^^^^^^^^^^^^^
+[files/email.csv::4]mary@example.com;9346;Mary;Jenkins
+                    ^^^^^^^^^^^^^^^^
+[files/email.csv::5]jamie@example.com;5079;Jamie;Smith
+                    ^^^^^^^^^^^^^^^^^

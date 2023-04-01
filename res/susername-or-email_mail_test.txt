@@ -1,0 +1,3 @@
+[input::2]booker12;rachel@example.com;9012;Rachel;Booker
+[input::5]jenkins46;mary@example.com;9346;Mary;Jenkins
+[input::6]smith79;jamie@example.com;5079;Jamie;Smith

@@ -1,0 +1,80 @@
+[input::2]Make the stars look like they're not shinin'
+                         ^^^               ^^^
+[input::4]Falls perfectly without her tryin'
+                             ^^^
+[input::6]Yeah, I know, I know
+                   ^^^     ^^^
+[input::7]When I compliment her, she won't believe me
+                 ^^^                 ^^^
+[input::9]Sad to think that she don't see what I see
+                                ^^^
+[input::10]But every time she asks me, "Do I look okay?"
+                                             ^^^
+[input::12]When I see your face
+                      ^^^
+[input::13]There's not a thing that I would change
+                   ^^^                ^^^
+[input::14]'Cause you're amazing
+                  ^^^
+[input::15]Just the way you are
+                        ^^^
+[input::16]And when you smile
+                    ^^^
+[input::17]The whole world stops and stares for a while
+                ^^^  ^^^    ^^^             ^^^
+[input::18]'Cause girl, you're amazing
+                        ^^^
+[input::19]Just the way you are
+                        ^^^
+[input::22]I could kiss them all day if she'd let me
+             ^^^
+[input::26]Oh, you know, you know
+               ^^^  ^^^  ^^^  ^^^
+[input::27]You know I'd never ask you to change
+                ^^^               ^^^
+[input::28]If perfect's what you're searchin' for, then just stay the same
+                             ^^^              ^^^
+[input::29]So don't even bother askin' if you look okay
+              ^^^        ^^^              ^^^ ^^^
+[input::30]You know I'll say
+                ^^^
+[input::31]When I see your face
+                      ^^^
+[input::32]There's not a thing that I would change
+                   ^^^                ^^^
+[input::33]'Cause you're amazing
+                  ^^^
+[input::34]Just the way you are
+                        ^^^
+[input::35]And when you smile
+                    ^^^
+[input::36]The whole world stops and stares for a while
+                ^^^  ^^^    ^^^             ^^^
+[input::37]'Cause girl, you're amazing
+                        ^^^
+[input::38]Just the way you are
+                        ^^^
+[input::39]The way you are
+                   ^^^
+[input::40]The way you are
+                   ^^^
+[input::41]Girl, you're amazing
+                 ^^^
+[input::42]Just the way you are
+                        ^^^
+[input::43]When I see your face
+                      ^^^
+[input::44]There's not a thing that I would change
+                   ^^^                ^^^
+[input::45]'Cause you're amazing
+                  ^^^
+[input::46]Just the way you are
+                        ^^^
+[input::47]And when you smile
+                    ^^^
+[input::48]The whole world stops and stares for a while
+                ^^^  ^^^    ^^^             ^^^
+[input::49]'Cause girl, you're amazing
+                        ^^^
+[input::50]Just the way you are
+                        ^^^

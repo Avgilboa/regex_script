@@ -1,0 +1,11 @@
+[input::1]for insert a color to the ter[93mm[0minal using python we have text we need to insert:
+[input::5]- Blue : print("\033[34[93mm[0m" + "This text will be blue." + "\033[0[93mm[0m" + "and this in the defualt color")
+[input::10]Black	\033[30[93mm[0m
+[input::11]Red	    \033[31[93mm[0m
+[input::12]Green	\033[32[93mm[0m
+[input::13]Yellow	\033[33[93mm[0m
+[input::14]Blue	\033[34[93mm[0m
+[input::15]Magenta	\033[35[93mm[0m
+[input::16]Cyan	\033[36[93mm[0m
+[input::17]White	\033[37[93mm[0m
+[input::18]reset the color  \033[0[93mm[0m

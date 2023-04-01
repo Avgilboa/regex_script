@@ -1,0 +1,4 @@
+[files/song1.txt::17]The whole world stops and stares for a while
+[files/song1.txt::28]If perfect's what you're searchin' for, then just stay the same
+[files/song1.txt::36]The whole world stops and stares for a while
+[files/song1.txt::48]The whole world stops and stares for a while

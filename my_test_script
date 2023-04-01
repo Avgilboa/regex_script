@@ -1,18 +1,13 @@
 #!/usr/bin/bash
 
-echo "hello , world
-my name is you!
-Hey
-why do you like that?" | python3 regex_finder.py -r h -c
+## This is incorrect script line - There is duplicate flags:
+python3 regex_finder.py -r [a-z][o][a-z] -f files/song1.txt -m -c 
+python3 regex_finder.py -r [a-z][o][a-z] -f files/song1.txt -u -c
 
 
-echo | python3 regex_finder.py -r h -c -u
-echo "" | python3 regex_finder.py -r h -c
-python3 regex_finder.py -r \[\(\].*\[\)\] -c < files/song2.txt
+ ## Lets try so search in files song1.txt and song2.txt all The [a-z][o][a-z] regex 
+python3 regex_finder.py -r [a-z][o][a-z] -f files/song1.txt -m  ## you can change it to -u or -c
+python3 regex_finder.py -r [a-z][o][a-z] -f files/song1.txt -c  ## you can change it to -m or -u
+python3 regex_finder.py -r [a-z][o][a-z] -f files/song2.txt -u  ## you can change it to -m or -c
 
-python3 regex_finder.py -r \[\(\].*\[\)\] -c -f files/song2.txt
-
-python3 regex_finder.py -r "[(].*[)]" -c < files/song2.txt
-python3 regex_finder.py -r "[a-z]{1}[o][a-z]{1}" -u < files/file1.txt
-
-python3 regex_finder.py --regex ".*[@].*[.][a-z]{3}" -u --files files/email.csv 
+## There is more files you can try on the 'files' folder.

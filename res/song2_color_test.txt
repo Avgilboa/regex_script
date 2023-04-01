@@ -1,0 +1,28 @@
+[input::3]Don't worry, be [93mhappy[0m
+[input::6]Don't worry, be [93mhappy[0m
+[input::7]Don't worry, be [93mhappy[0m now
+[input::9](Ooh-ooh-ooh-ooh) Be [93mhappy[0m
+[input::10](Ooh-ooh-ooh) Don't worry, be [93mhappy[0m
+[input::12](Ooh-ooh-ooh-ooh) Be [93mhappy[0m
+[input::13](Ooh-ooh-ooh) Don't worry, be [93mhappy[0m
+[input::16]Don't worry, be [93mhappy[0m
+[input::19]Don't worry, be [93mhappy[0m (look at me, I'm [93mhappy[0m)
+[input::21](Ooh-ooh-ooh-ooh) Be [93mhappy[0m
+[input::23]When you worry, call me, I make you [93mhappy[0m
+[input::25](Ooh-ooh-ooh-ooh) Be [93mhappy[0m
+[input::29]But don't worry, be [93mhappy[0m
+[input::32]So don't worry, be [93mhappy[0m
+[input::33]Don't worry, be [93mhappy[0m now
+[input::35](Ooh-ooh-ooh-ooh) Be [93mhappy[0m
+[input::36](Ooh-ooh-ooh) Don't worry, be [93mhappy[0m
+[input::38](Ooh-ooh-ooh-ooh) Be [93mhappy[0m
+[input::39](Ooh-ooh-ooh) Don't worry, be [93mhappy[0m
+[input::42]Dn't worry, be [93mhappy[0m
+[input::45]But don't worry, be [93mhappy[0m, be [93mhappy[0m now
+[input::47](Ooh-ooh-ooh-ooh) Be [93mhappy[0m
+[input::48](Ooh-ooh-ooh) Don't worry, be [93mhappy[0m
+[input::50](Ooh-ooh-ooh-ooh) Be [93mhappy[0m
+[input::51](Ooh-ooh-ooh) Don't worry, be [93mhappy[0m
+[input::53](Ooh-ooh-ooh-ooh) Don't do it, be [93mhappy[0m
+[input::57](Ooh-ooh-ooh) don't worry, be [93mhappy[0m
+[input::59](Ooh-ooh-ooh-ooh) I'm [93mhappy[0m

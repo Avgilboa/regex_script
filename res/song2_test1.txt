@@ -1,0 +1,29 @@
+[files/song2.txt::9](Ooh-ooh-ooh-ooh) Be happy
+[files/song2.txt::10](Ooh-ooh-ooh) Don't worry, be happy
+[files/song2.txt::11](Ooh, ooh-ooh-ooh-ooh-ooh-ooh-ooh-ooh) Don't worry
+[files/song2.txt::12](Ooh-ooh-ooh-ooh) Be happy
+[files/song2.txt::13](Ooh-ooh-ooh) Don't worry, be happy
+[files/song2.txt::19]Don't worry, be happy (look at me, I'm happy)
+[files/song2.txt::21](Ooh-ooh-ooh-ooh) Be happy
+[files/song2.txt::22](Ooh-ooh-ooh) Hey I give you my phone number
+[files/song2.txt::24](Ooh, ooh-ooh-ooh-ooh-ooh-ooh-ooh-ooh) Don't worry
+[files/song2.txt::25](Ooh-ooh-ooh-ooh) Be happy
+[files/song2.txt::26](Ooh-ooh-ooh)
+[files/song2.txt::35](Ooh-ooh-ooh-ooh) Be happy
+[files/song2.txt::36](Ooh-ooh-ooh) Don't worry, be happy
+[files/song2.txt::37](Ooh, ooh-ooh-ooh-ooh-ooh-ooh-ooh-ooh) Don't worry
+[files/song2.txt::38](Ooh-ooh-ooh-ooh) Be happy
+[files/song2.txt::39](Ooh-ooh-ooh) Don't worry, be happy
+[files/song2.txt::47](Ooh-ooh-ooh-ooh) Be happy
+[files/song2.txt::48](Ooh-ooh-ooh) Don't worry, be happy
+[files/song2.txt::49](Ooh, ooh-ooh-ooh-ooh-ooh-ooh-ooh-ooh) Don't worry
+[files/song2.txt::50](Ooh-ooh-ooh-ooh) Be happy
+[files/song2.txt::51](Ooh-ooh-ooh) Don't worry, be happy
+[files/song2.txt::52](Ooh, ooh-ooh-ooh-ooh-ooh-ooh-ooh-ooh) don't worry, don't worry
+[files/song2.txt::53](Ooh-ooh-ooh-ooh) Don't do it, be happy
+[files/song2.txt::54](Ooh-ooh-ooh) Put a smile in your face, don't bring everybody down like this
+[files/song2.txt::55](Ooh, ooh-ooh-ooh-ooh-ooh-ooh-ooh-ooh) Don't worry
+[files/song2.txt::56](Ooh-ooh-ooh-ooh) It will soon pass, whatever it is
+[files/song2.txt::57](Ooh-ooh-ooh) don't worry, be happy
+[files/song2.txt::58](Ooh, ooh-ooh-ooh-ooh-ooh-ooh-ooh-ooh) I'm not worried
+[files/song2.txt::59](Ooh-ooh-ooh-ooh) I'm happy
