@@ -30,6 +30,8 @@ Try your regex on a text here: [LINK](https://regex101.com/)
 ## Implementing a Regex Matching script
 I have created a custom script that is capable of receiving a regular expression and either a file name or text from STDIN as input. It then proceeds to search for lines that match the regex expression and prints them.
 
+![Runing_exp](https://user-images.githubusercontent.com/35407628/229313670-90b74b7a-4e0f-446a-ad43-85ba0eb0b5e8.gif)
+
 ## Flags the script can get:
 1. **‘ -r ’ (‘--regex’) :**  This flag is mandatory and should be used to specify the regular expression to search for.  
 
