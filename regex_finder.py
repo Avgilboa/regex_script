@@ -8,13 +8,13 @@ class my_text:
         (1) name of the file [with the path to avoid duplicate files]
         (2) list of the lines of the text: ["line1", "line2"]
     """
-    def __init__(self, file_name , txt_lst) -> None:
+    def __init__(self, file_name, txt_lst):
         self.txt_lst, self.my_name = txt_lst , file_name
 
     def get_name(self):
         return self.my_name
 
-    def __str__(self) -> str:
+    def __str__(self):
         st = ''
         for num_line,exp in enumerate(self.txt_lst):
             st += f"{num_line}: {exp}"
@@ -48,7 +48,7 @@ next(2) handler will deal with the text input (files or STDIN).
 
 """
 class regex_handler(handler):
-    def __init__(self) -> None:
+    def __init__(self):
         self.next_handler = None
     def set_next(self, handler):
         return super().set_next(handler)
@@ -69,7 +69,7 @@ next(3) handler will deal with each file separately and search in each line if t
 
 """
 class file_handler(handler):
-    def __init__(self) -> None:
+    def __init__(self):
         self.next_handler = None
 
     def set_next(self, handler):
@@ -100,14 +100,15 @@ if it doesn't exist -> iterate to the next line
 if it does exist    -> send to the next handler(4) for printing the line.
 """
 class match_handler(handler):
-    def __init__(self) -> None:
+    def __init__(self):
         self.next_handler = None
     
     def set_next(self, handler):
         return super().set_next(handler)
     
-    def handle(self, regex, files: my_text, flags):
+    def handle(self, regex, files, flags):
             # search for the regex with the re module
+            # if there is a match send to the printer handler else continue
             pattern = re.compile(regex)
             for line,exp in enumerate(files.txt_lst):
                 place = [i for i in pattern.finditer(exp.strip())]
@@ -125,13 +126,14 @@ there is three flags:
 using dictionary to know which flags we get in the terminal
 """
 class printer_handler:
-    def __init__(self) -> None:
+    def __init__(self):
         self.next_handler = None
     
     def set_next(self, handler):
         return super().set_next(handler)
     
-    def handle(line: int, exp:str, place: object, file_name: str, flags):
+    def handle(line: int, exp, place, file_name, flags):
+        #print the current line according to the appropriate flag
         if flags["machine"] is True:
             print("[{}:{}:{}:{}]".format(file_name, line, place[0].start(), place[0].group()))
             return
@@ -145,16 +147,16 @@ class printer_handler:
             color_name =[]
             #save the index will need to reflace for save the original indexs for any char on exp
             # and print eventually the exprtion with the color. 
-            start = 0
+            next_start_index = 0
             for match in place:
-                color_expr = ((start, match.start()) ,
+                color_expr = ((next_start_index, match.start()) ,
                             "\033[93m" + exp[match.start():match.end()] + "\033[0m" )
                 color_name.append(color_expr)
-                start = match.end()
+                next_start_index = match.end()
             exp2 =""
             for (start_pos,end_pos) , st in color_name:
                 exp2 += exp[start_pos: end_pos] + st
-            exp2 = exp2 + exp[start:]
+            exp2 = exp2 + exp[next_start_index:]
             exp = exp2
             print(header + exp)
             return
@@ -184,7 +186,7 @@ and send to the first handler the input.
 
 """
 class init():
-    def __init__(self) -> None:
+    def __init__(self):
         files , regex , flags = self.split_from_terminal()
         if [value for value in flags.values()].count(True) > 1:
             raise Exception("you can use only one of this flags: -u -c -m")
