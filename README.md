@@ -39,16 +39,17 @@ If no **'-f'** flag is provided, the script should read from STDIN.
 The script should accept only one of the following mutually exclusive flags as a list of parameters, or none of them:  
 
 3.  **'-u' ('--underscore'):** If this flag is provided, the script should print '^' under the matching text.  
-![image](https://user-images.githubusercontent.com/35407628/229312992-e6329f66-bd8c-467c-a67c-0456c3178317.png)
+![image](https://user-images.githubusercontent.com/35407628/229313168-28208532-e9c2-4d33-ad96-3f707ce2257b.png)
 
 
 4.  **'-c' or '--color':** If this flag is provided, the script should highlight the matching text.  
-![image](https://user-images.githubusercontent.com/35407628/229312976-42a00cce-f4f9-4dc4-bf6c-a70df873660a.png)
+![image](https://user-images.githubusercontent.com/35407628/229313192-be96757d-2873-45bd-9480-5a3d540d915b.png)
+
 
 
 5. **'-m' or '--machine':** If this flag is provided, the script should generate machine-readable output in the format of:
 "file_name:no_line:start_pos:matched_text".
-  ![image](https://user-images.githubusercontent.com/35407628/229313002-1bde89bd-4819-4b23-b8f2-ba42f6b38995.png)
+  ![image](https://user-images.githubusercontent.com/35407628/229313150-b35d564e-aec6-444a-bf4a-f2264f135511.png)
 
 
 
