@@ -88,8 +88,7 @@ I implemented the script using the [chain of responsibility design pattern](http
 5. The printer handler looks for the appropriate flag and prints the line accordingly.  
 This process continues until all lines have been processed.  
 
-![image](https://github.com/Avgilboa/regex_script/blob/master/res/chain%20of%20responsibility.png?raw=true)
-
+![chain of responsibility](https://user-images.githubusercontent.com/35407628/229312480-29dd084e-c352-4b4d-8b1c-285790880dad.png)
 
 ## Tests
 
