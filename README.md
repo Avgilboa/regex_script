@@ -62,20 +62,18 @@ or run this bash
 ## Usage/Examples
 
 ```shell
-python3 regex_finder.py --regex "[p][r]" -f out.py
+python3 regex_finder.py --regex "[p][r]" -f files/out.py
 ```
 
 ```python3
-out.py:
+input file: out.py
     print("Hello-world!")
     for i in {2, 3, 4}:
         print(i)
 ```
-```shell
-output:
-  [files/out.py::1]print("Hello-world!")
-  [files/out.py::3]print(i)
-```
+
+![image](https://user-images.githubusercontent.com/35407628/229312595-52247f3a-0c0d-49a5-9a99-292b731d36cc.png)
+
 
 You can see more input and output examples in the tests file
 
