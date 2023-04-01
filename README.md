@@ -126,4 +126,4 @@ next - run the command
 ```bash
   pytest tests.py
 ```
-![run_tests](https://user-images.githubusercontent.com/35407628/229312426-a2bb4f75-cd82-4157-b9b8-1ccad5b5e764.png)
+![image](https://user-images.githubusercontent.com/35407628/229313873-9be7d68e-e4e8-4fb5-af8b-898e5524c431.png)
