@@ -2,6 +2,19 @@
 
 I asked to implement a Python script that searches for matching regular expressions. The script should accept a regular expression and either a text or a file as input. The script should then search for lines that match the regular expression and print them to the console.
 
+- [Regular expression finder script](#regular-expression-finder-script)
+  * [Regular expression Explain:](#regular-expression-explain)
+  * [Implementing a Regex Matching script](#implementing-a-regex-matching-script)
+  * [Flags the script can get:](#flags-the-script-can-get)
+  * [Run Locally](#run-locally)
+  * [Usage/Examples](#usage-and-examples)
+  * [My implementation technique](#my-implementation-technique)
+  * [Tests](#tests)
+
+<small><i><a href='http://ecotrust-canada.github.io/markdown-toc/'>Table of contents generated with markdown-toc</a></i></small>
+
+
+
 ## Regular expression Explain:
 
 Regular expressions (regex) are a powerful and flexible tool for searching and manipulating text data in computer programs.  
@@ -26,11 +39,17 @@ If no **'-f'** flag is provided, the script should read from STDIN.
 The script should accept only one of the following mutually exclusive flags as a list of parameters, or none of them:  
 
 3.  **'-u' ('--underscore'):** If this flag is provided, the script should print '^' under the matching text.  
+![image](https://user-images.githubusercontent.com/35407628/229312992-e6329f66-bd8c-467c-a67c-0456c3178317.png)
+
 
 4.  **'-c' or '--color':** If this flag is provided, the script should highlight the matching text.  
+![image](https://user-images.githubusercontent.com/35407628/229312976-42a00cce-f4f9-4dc4-bf6c-a70df873660a.png)
+
 
 5. **'-m' or '--machine':** If this flag is provided, the script should generate machine-readable output in the format of:
 "file_name:no_line:start_pos:matched_text".
+  ![image](https://user-images.githubusercontent.com/35407628/229313002-1bde89bd-4819-4b23-b8f2-ba42f6b38995.png)
+
 
 
 ## Run Locally
@@ -59,7 +78,7 @@ or run this bash
 ./my_test_script
 ```
 
-## Usage/Examples
+## Usage and Examples
 
 ```shell
 python3 regex_finder.py --regex "[p][r]" -f files/out.py
